@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+body {
+  @apply font-montserrat;
+}
+
+.wrapper-container {
+  @apply w-full flex  bg-[#021526] p-4;
+}
+
+.wrapper {
+  @apply w-full sm:max-w-screen-md flex flex-col ml-5 gap-2     
+  md:max-w-screen-lg md:flex md:flex-row md:justify-between
+  xl:max-w-screen-lg xl:flex xl:flex-row xl:justify-between xl:m-auto;
+}
+
+.header-container {
+  @apply flex gap-2;
+}
+
+#logo {
+  @apply flex items-center text-2xl;
+}
+
+#wordVal {
+  @apply md:max-w-screen-sm rounded-sm p-2 w-60  md:w-60 lg:w-64 lg:p-3;
+}
+
+#searchBtn {
+  @apply md:max-w-screen-sm text-white rounded-sm p-2 text-sm bg-[#03346E] lg:p-3 lg:pl-6 lg:pr-6;
+}
+
+.body-wrapper {
+  @apply p-10;
+}
+
+.body-container {
+  @apply md:max-w-screen-lg m-auto flex flex-col gap-1 sm:max-w-screen-xl lg:max-w-screen-lg;
+}
+
+.word-container {
+  @apply flex justify-between items-center;
+}
+
+#dispWord {
+  @apply text-2xl capitalize;
+}
+
+#text {
+  @apply text-gray-600;
+}
+
+#playbackBtn {
+  @apply cursor-pointer;
+}
+
+#synonyms {
+  @apply flex flex-wrap items-center gap-1;
+}
+
+li {
+  @apply border w-fit p-3 rounded-sm hover:bg-slate-300 hover:cursor-pointer hover:text-white;
+}
+
+.synonyms-wrapper {
+  @apply md:max-w-screen-xl;
+}
+
+.word-wrapper {
+  @apply flex flex-row items-center gap-1;
+}
+
+label {
+  @apply text-gray-400;
+}
